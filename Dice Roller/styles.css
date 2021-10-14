@@ -7,7 +7,7 @@ h1 {
 }
 
 .text1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: moospace, Courier, sans-serif;
     text-align: center;
     font-size: large;
 }
@@ -19,4 +19,8 @@ h1 {
 
 footer {
     position: fixed;
+}
+
+body {
+    background-color:rgb(184, 240, 201);
 }

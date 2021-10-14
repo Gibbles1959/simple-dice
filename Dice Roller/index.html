@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head><link href="styles.css" rel = "stylesheet"> <title>Dice Roller v0.0.1</title></head>
+    <head><link href="styles.css" rel = "stylesheet"> <title>Dice Roller v0.0.2</title></head>
     <body>
         <h1>Dice Roller</h1>
-        <p class="text1">Simple 6 Sided Die Roller made by Clint Gibbs on 14/10/21</p>
-        <p class="text2">Click button or refresh page to roll again! <br> <button onClick="window.location.reload();">Roll Again</button></p>
-        <script> const now = new Date();
+        <p class="text1">Simple 6 Sided Die Roller made by Clint Gibbs. Published on Thu Oct 14 2021 12:01:26 GMT+1100 (Australian Eastern Daylight Time)</p>
+        <p class="text1">Click button or refresh page to roll again! <br> <button onClick="window.location.reload();">Roll Again</button></p>
+       <!--Sets value to the current date and time--> 
+       <script> const now = new Date();
          console.log("JavaScript is active. . ."); 
+        // Rolls the die and shows the result in an alert box
         var Dice = Math.floor(Math.random() * 6) + 1; 
-        console.log(Dice);
+        console.log("Rolled a ", Dice);
         setTimeout(function(){ alert("You rolled a " + Dice);  }, 100);
         
         </script>  
-        <a href="https://github.com/Gibbles1959/simple-dice" target="_blank"><img alt="GitHub" src="https://cdn.afterdawn.fi/v3/news/original/github-logo.png" width="80" height="80"></a>
+       <!--Link to github via clicking on the image--> 
+       <a href="https://github.com/Gibbles1959/simple-dice" target="_blank"><img alt="GitHub" src="https://cdn.afterdawn.fi/v3/news/original/github-logo.png" width="80" height="80"></a>
     </body>
     <footer>
         <hr>
         <script>
+            // Shows date and time that the die was rolled on
         document.write("You rolled the dice on " + now)
         </script>
     </footer>
